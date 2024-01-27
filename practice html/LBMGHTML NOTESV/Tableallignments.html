@@ -1,0 +1,94 @@
+<!DOCTYPE HTML	>
+<html>
+<head>
+<title>Table allignments</title>
+
+<style>
+   table
+{
+      border-collapse : collapse;
+}
+</style>
+
+</head>
+
+<body style="background-color : yellow">
+<h3>Table merging : To merge the rows using rowspan attribute which is used in tr tag.</h3><br/>
+<h3>To merge the columns using colspan attribute which is used in td tag. <br/>It expects one value called no. of cols in colspan no. of rows in rowspan.</h3>
+<h3>To set the table at either left / right / center using align attribute in table tag.</h3>
+<h4>Creating a table with 4 cols : and 4 rows </h4><br/>
+
+<table  align = "center" border="4" width="50%">
+<th>
+<tr align = "center">
+<td colspan="4"><b>colspan</b></td>
+
+</tr>
+</th>
+
+<tr>
+<td rowspan="5"><b>rowspan</b></td>
+</tr>
+<tr align = "center">
+<td >1</td>
+<td>vasu</td>
+<td>24</td>
+</tr>
+
+<tr align = "center">
+<td>2</td>
+<td>vicky</td>
+<td>25</td>
+</tr>
+
+<tr align = "center">
+<td>3</td>
+<td>krishna</td>
+<td>35</td>
+</tr>
+
+<tr align = "center">
+<td>4</td>
+<td>naveen</td>
+<td>33</td>
+</tr>
+
+</table>
+<h2>To change the border colors of the table using bordercolor attribute .<br/>
+To add background color to the table using bgcolor attribute in the table tag.</h2><br/><br/>
+
+<h3>To add a Caption to the table like heading with default functionality using : caption tag. at first line inside the first row.</h3>
+
+<h2>imp : tr alignment is not worked when the contains caption tag, else it worked means without contains caption tag.</h2>
+
+<table border="4" bordercolor="blue" bgcolor="orange" align="center" width="50%" >
+<th>
+<tr align="center">
+<!-- <caption><b>Me and My Parents</b></caption> -->
+<td><b>NAME</b></td>
+<td><b>MARKS</b></td>
+<td><b>AGE</b></td>
+</tr>
+</th>
+
+<tr >
+<td>vasu</td>
+<td>97</td>
+<td>25</td>
+</tr>
+
+<tr >
+<td>Ramanamma</td>
+<td>98</td>
+<td>47</td>
+</tr>
+
+<tr >
+<td>99</td>
+<td>Demudu</td>
+<td>49</td>
+</tr>
+</table>
+
+</body>
+</html>

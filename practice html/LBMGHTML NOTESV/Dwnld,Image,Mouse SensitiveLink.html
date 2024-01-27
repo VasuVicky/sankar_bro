@@ -1,0 +1,70 @@
+<!DOCTYPE HTML	>
+<html>
+<head>
+<title>Links Colors</title>
+</head>
+
+<body vlink ="green" alink="yellow">
+<h4>provide download to the link.</h4><br/>
+<a href="C:\Users\SIRIGIDI VASU\OneDrive\Pictures\Documents\Desktop\Java INTRO..docx">download java notes.</a><br/>
+<h4>Image link click on image .</h4>
+<a href = "Tumera.png"><img  src ="Photo jpeg.jpeg" alt ="vicky" width = "200px" height="200px"/></a><br/>
+
+<h3>Mouse Sensitive Links :   HTML & XHTML provides the feature of embeding multiple links in a single image.<br/>
+1.We can create a different multiple link in a single image based on the different coordinates on the image.<br/>
+2.Then we can select & click the desired target link from the different coordinates in the single imange.<br/>
+3.Mouse sensitive links in a single image on different coordinates are also called Image Maps.<br/>
+
+Types : <br/> These are two  types : <br/>
+
+		1.Server Side Image Maps .
+
+		2.Client Side Image Maps.</h3>
+
+<br/>Every Image map have an attribute : <br/>
+
+		1. If you want to use Server Side Image Map  by using : ismap attribute.
+
+		2. If you want to use Client Side Image Map by using  : usemap attribute.
+<br/>
+<b>1.Server Side Image Maps : ismap.</b><br/>
+
+The server use the Mouse Pointer coordinates for which document to be deliver back to the browser.<br/> keep use the ismap attribute in img tag. it works like a normal link means redirecting to the server.
+
+like <!--  <img ismap src = "imglink" alt = "altername"/>--><br/>
+
+<a href = "Photo jpeg.jpeg">
+<img ismap src = "Tumera.png" alt = "noimage" width = "300px"  >
+</a><br/br/>
+
+<b>2.Client Side Image Maps : usemap.</b><br/>
+
+The client use the Mouse Pointer coordinates for which document to be deliver back to the browser.<br/> keep use the usemap attribute in img tag by passing a value with #tag : #value and keep maintain this value as name attribute value in map tag.
+
+like <!--  <img  src = "imglink" alt = "altername"  border="2" usemap="#name of the map. in map tag."/>--><br/>
+
+When we implementing the usemap we can use two tags called , map tag and area tag.
+<br/>map tag expects an attribute called name : and give any name as value , keep equal the value of the name attribute and usemap attribute value in img tag.<br/>
+area is the another tag  inside the map tag , we can create n no. of area tags inside the map tag, and it expects 3 attributes : shape="circle" and coords="60,60,30,10" : coordinate points.
+and href ="link".<br/>
+
+<!-- 
+ <img  src = "imglink" alt = "altername"  border="2" usemap="#name of the map. in map tag."/> 
+<map name = "usemapname">
+<area shape ="circle" coords="60,60,10,20" href="link to be open"></area>
+</map>
+--><br/>
+
+ <img  src = "Photo jpeg.jpeg" alt = "nophoto"  border="2" usemap="#mapvalue" width = "200px" height ="200px"/> 
+<map name = "mapvalue">
+<area shape ="circle" coords="30,120,10,40" href="Tumera.png"></area>
+<area shape ="rectangle" coords="60,60,10,20" href="C:\Users\SIRIGIDI VASU\OneDrive\Pictures\Documents\Desktop\practice html\LBMGHTML NOTESV\NestedTable.html"></area>
+</map>
+<br/><br/>
+
+<h4>We can also create an email links : single keep the email url in href of the anchor attribute then it will redirect to that mail page.<br/></h4><br/>
+
+<a href = "vasu123@gmail.com">email</a>
+
+</body>
+</html>

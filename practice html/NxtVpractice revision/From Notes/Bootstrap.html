@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Intro to Bootstrap</title>
+	<link rel="stylesheet" type ="text/css" href = "Bootstrapcss.css">
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+	<div class="maincontainer">
+	<div class="div1">
+	<h2>Bootrap is the technology used to develop responsive web sites.</h2>
+	<h3>Reusablity : we can define the ruleset once and apply to the n number of div elements at a time. using class attribute in div element.<br/>When we want to apply the common style to different div element is possible by difining one css ruleset.<br/>
+		it makes to spend less time mand make faster to develop our app.<br/>We can also pass n no. of value to the class attribute in div element separated by space.</h3></div>
+		
+		<!--BOOTSTRAP -->
+
+<div class="div2">
+		<pre><h3>Bootstrap is a technology which is used to develop responsive webpages.
+Bootstrap is a collection of large predefined code snippets which responsible to applying predefined style 
+to our webpage. If you want to use bootstrap classes then we need add some peice of code of the Bootstrap in head part by adding some links : those are also called as Bootstrap CDN's which are already developed by the bootstrap 
+developers using HTML , CSS & JAVASCRIPT.</h3><br/><h2>Now we are discussing about a few of the BOOTSTRAP class names by applying styles to the BUTTON , TEXT , OUTLINE BUTTON. And these class names passed as a values to the class attribute in div element.</h2><br/></pre>
+
+<hr color ="blue"><br/>
+
+<h3>Bootstrap Button classnames</h3>
+<button class="btn btn-primary">primary</button>
+<button class="btn btn-secondary">secondary</button>
+<button class="btn btn-success">success</button>
+<button class="btn btn-danger">danger</button>
+<button class="btn btn-warning">warning</button>
+<button class="btn btn-light">light</button>
+<button class="btn btn-dark">dark</button>
+<button class="btn btn-info">info</button>
+<br/>
+
+<h3>Bootstrap Outline Button classnames</h3>
+<button class="btn btn-outline-primary">outline-primary</button>
+<button class="btn btn-outline-secondary">outline-secondary</button>
+<button class="btn btn-outline-success">outline-success</button>
+<button class="btn btn-outline-danger">outline-danger</button>
+<button class="btn btn-outline-warning">outline-outline-warning</button>
+<button class="btn btn-outline-light">outline-light</button>
+<button class="btn btn-outline-dark">outline-dark</button>
+<button class="btn btn-outline-info">outline-info</button>
+<h3>Bootstrap Text classnames</h3>
+
+<p class="text-primary">primary</p>
+<p class="text-secondary">secondary</p>
+<p class="text-success">success</p>
+<p class="text-danger">danger</p>
+<p class="text-info">info</p>
+<p class="text-warning">warning</p>
+<p class="text-light">light</p>
+<p class="text-dark">dark</p>
+
+<div class="div1">
+<h3>Bootstrap Text Transforms</h3>
+<p class="text-lowercase">LOWERCASE</p>
+<p class="text-uppercase">uppercase</p>
+<p class="text-center">center</p>
+<p class="text-left">left</p>
+<p class="text-right">right</p>
+<p class="text-capitalize">capitalize</p></div>
+
+</div>
+
+<!-- BOOTSTRAP LAYOUTS -->
+<div class="div2">
+<h6>Layouts : A layout is the area of the window , which specifies the subdivisons of the elements, a layout provides a pattern where the element need to placed, layouts plays morst important role in the webpage , without layout we can't add our elements correctly.Throught layouts only we add the desired html elements to our page which defines the designing of the page.
+Layouting : The process of placed/arranging the html elements on desired locations based on our requirements,<br/>
+Every application is developed through layout only with out layout there is no application structure,
+ To define a Layouts using flexbox : properties.<br/>
+Flexbox is the principle to implements the layout of the window<br/>
+and There are a few list of properties to design layout are : <br/>
+Methods to design a layout : <br/>
+
+<ol type="1">
+
+	<li>Flexbox Container</li>
+	<li>Flexbox Direction</li>
+	<li>Justify content</li>
+	<li>CSS GRID : it is not best way / not stable to develop layout
+	we are learn later after it get stable now we learn about flexbox to develope layouts</li>
+</ol></h6><br/>
+<h5>1.Flexbox Container : To design a layout then first we need to descide which type container we will use. that container is called flex container. Flex container is a collection of flex items, all html element inside the flex box container called flex items.</h5><br/>
+<h5>2.Flex Direction : flex direction is the property specifies the way of arranging the flex items either in vertically /column wise or horizontally /row wise</h5>
+<h5>3.Justify Content : it is the class property of the bootstrap layouts which specifies the alignment of the flex items based on the flex direction. <br/>If the flex direction is horizontal then justify content : left(start) or center or right(end).<br/>
+If the flex direction is vertical then the justify content : top(strt) or center or bottom(end) : which specifies the position of the flex item where it will be displaying.</h5><br/>
+<h3>Steps to create the flex content : <br>
+<ul>
+	<li>Create a flexbox container</li>
+	<li>Add elements or flex items in it</li>
+	<li>specifies the flex direction</li>
+	<li>justify the content based on your requirements.</li>
+	To define the layouts boostrap is the best choice to reuse the predefined classes to arrange the layouts.
+	<br/>
+</ul><br/>
+1.Create a background container as a flex box container using predefined bootstrap class called "d-flex" (display flex).<br/><br/>
+2.Specify the direction of the flex item/items horizontally by using class called : "flex-row" / vertically :  "flex-column".<br/><br/>3.Justify the content to the center or end or start based on your needs. to align the flex items to the center position using align-items-center bootrap class name</h3>
+</div><br/><br/>
+<div class="d-flex flex-row justify-content-center ">
+	<div class="alldivs">
+		<h2>Heading</h2>
+		<p>Paragraph</p>
+		<center><button class="btn btn-success" style="color : blue;">Button</button></center>
+	</div>
+	<div class="alldivs">
+		<h2>Heading</h2>
+		<p>Paragraph</p>
+		<center><button class="btn btn-success" style="color : blue;">Button</button></center>
+	</div>
+	<div class="alldivs">
+		<h2>Heading</h2>
+		<p>Paragraph</p>
+		<center><button class="btn btn-success" style="color : blue;">Button</button></center>
+	</div>
+</div>
+<div>
+	<!-- using css style without using bootstrap flex property : -->
+
+	<div class="nonbootdiv">
+		<div class="alldivs">
+		<h2>Heading</h2>
+		<p>Paragraph</p>
+		<center><button class="btn btn-success" style="color : blue;">Button</button></center>
+	</div>
+		<div class="alldivs">
+		<h2>Heading</h2>
+		<p>Paragraph</p>
+		<center><button class="btn btn-success" style="color : blue;">Button</button></center>
+	</div>
+		<div class="alldivs">
+		<h2>Heading</h2>
+		<p>Paragraph</p>
+		<center><button class="btn btn-success" style="color : blue;">Button</button></center>
+	</div>
+</div>
+</div>
+<hr color="blue">
+
+
+<!-- preparing a card at top center and add background image -->
+<div class="d-flex">
+<div class="cardimage d-flex flex-column justify-content-start align-items-center"> 
+	<div class="cardimgstyle">
+		<h2>heading</h2>
+		<p>paragraph</p>
+		<button class="btn btn-success">button</button>
+	</div>
+</div>
+
+<!-- BOTTOM CARD -->
+
+<div class="cardimage d-flex flex-column justify-content-end align-items-center"> 
+	<div class="cardimgstyle">
+		<h2>heading</h2>
+		<p>paragraph</p>
+		<button class="btn btn-success">button</button>
+	</div>
+</div>
+</div><br/><hr color ="black">
+
+<!-- FAVOURATE PAGE SESSION -->
+
+<div style="background: magenta; padding: 10px; border: 2px solid yellow; width : 450px; position: relative; left : 100px;">
+	<h3 style="text-align: left;">MAIN HEADING</h3><br/>
+<div class="d-flex align-items-center">
+	<div class="text-danger favcardstyle">
+		<h2>heading1<h2>
+		<p>paragraph1</p>
+	</div>
+	<img src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?cs=srgb&dl=daylight-environment-forest-459225.jpg&fm=jpg" alt="no img" style="width :200px; height: 100px;">
+</div>
+<div class="d-flex">
+	<div class="text-danger favcardstyle">
+		<h2>heading2<h2>
+		<p>paragraph2</p>
+	</div>
+	<img src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?cs=srgb&dl=daylight-environment-forest-459225.jpg&fm=jpg" alt="no img" style="width :200px; height: 100px;">
+</div>
+<div class="d-flex">
+	<div class="text-danger favcardstyle">
+		<h2>heading3<h2>
+		<p>paragraph3</p>
+	</div>
+	<img src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?cs=srgb&dl=daylight-environment-forest-459225.jpg&fm=jpg" alt="no img" style="width :200px; height: 100px;">
+</div>
+<div class="d-flex">
+	<div class="text-danger favcardstyle">
+		<h2>heading4<h2>
+		<p>paragraph4</p>
+	</div>
+	<img src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?cs=srgb&dl=daylight-environment-forest-459225.jpg&fm=jpg" alt="no img" style="width :200px; height: 100px;">
+</div>
+</div>
+</div>
+
+
+</body>
+</html>
