@@ -9,7 +9,7 @@ for i in data:
     file.write(' ')
 print('data loaded successfully')
 file.close()
-
+#adding something..................................
 with open('countries.txt','r') as out:
     data = out.read()
     val = data.split()
