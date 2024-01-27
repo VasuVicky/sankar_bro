@@ -1,0 +1,17 @@
+.maincontainer
+{
+	background-image : url('https://wallsdesk.com/wp-content/uploads/2016/05/Waterfalls-Photos.jpg');
+	background-size : cover;
+	height : 100vh;
+	
+}
+
+.datacontainer
+{
+	font-family: sans-serif;
+	font-style : italic;
+	font-weight: bolder;
+	background-color : limegreen;
+	width: 30%;
+
+}

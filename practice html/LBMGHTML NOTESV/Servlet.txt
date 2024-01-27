@@ -1,0 +1,81 @@
+Servlet : by abhi.
+=======
+
+1. Servlet API  is a part of JEE API  for developing web based applications.
+2. The servlet is a server side technology to develope application which are run on Server.
+3. The Servlet api provides two packages to implement the servlet in java.
+
+	1.javax.servlet
+	2.javax.servlet.http
+
+4.Developing the Servlet application means implementing the Servlet interface directly or indirectly.
+5.A servlet program can be developed in 3 ways :
+
+	1.By implementing Servlet Interface.
+	2.By extending GeneriServlet class. :inside : javax.servlet
+	3.By extending HttpServlet class. : inside : javax.servlet.http
+
+	this is the most widely used class for creating the servlets.
+
+6. javax.servlet package : protocol independent servlets [Generic servlets].
+
+Interfaces : 
+
+There are so many interfaces : but these are the main 
+
+1.Servlet
+2.ServletRequest
+3.ServletResponse
+4.ServletConfig
+5.ServletContext
+6.RequestDispathcer
+
+Classes :
+
+	1.GenericServlet.
+
+7.javax.servlet.http package : used to develop Http base protocol servlets. this is the widely used package.
+
+Interfaces : 
+
+These are the few important classes and interfaces.
+
+1.HttpServletReuest.
+2.HttpServletResponse.
+3.HttpSession.
+
+Classes : 
+
+	1.HttpServlet.  : widely used class to develop servlets in java.
+
+Servlet Interface : 
+===============
+
+The Servlet interface belongs to javax.servlet package and it contains the following implementation methods.
+
+1.public void init(ServletConfig config){} : 
+
+This method will be executeonly one time, When the servlet object is created or when the first request is sent to the servlet.
+
+2.public void service(ServletRequest req, ServletResponse res){} : 
+
+service() is the main method to perform the actual task i.e It will contains the business logic. The servlet container / web server call the service() method to handle the requests comming from the clients and to send the response back to the client.
+The service() method checks the Http request type and calls to their associated methods.
+types of requests (i think used in method attribute in the forms)(GET,POST,PUT,DELETE) and it's associated methods are : doGet(), doPost(), doPut() , doDelete() etc..
+
+3.public void destroy() {} : destroy() method is executed only once, when the servlet is timed out / destroyed.
+
+4.public ServletConfig getServletConfig() {} : This method returns the object of the ServletConfig object.
+
+5.public string getServletInfo() {} : This method returns the description about the servletConfig object.
+
+If you want to create a servlet in java then we need to implement all these above method.
+
+life cycle of a servlet : start       running     dead (like thread life cycle).
+
+init()      service()    getServletConfig()   getServletInfo()   destroy()   .
+
+
+
+
+ 

@@ -1,0 +1,75 @@
+.maincontainer
+{
+	background-color : cyan;
+	height : 700vh;
+	width :100vw;
+	text-align: center;
+
+}
+
+.div1
+{
+	background-color: yellow;
+	color : blue;
+	border : 2px solid red;
+	margin : 5px;
+	padding : 3px;
+	font-weight: bolder;
+
+}
+
+.div2
+{
+	background-color: black;
+	margin : 5px;
+	width : 600px;
+	color : orange;
+}
+.alldivs
+{
+	color: yellow; border : 2px;
+	background-color : purple; padding : 3px; margin : 10px;
+	align-items: center;
+}
+
+.nonbootdiv
+{
+	display : flex;
+	flex-direction: column;
+	align-items : center;
+	justify-content : end;
+}
+
+.cardimage
+{
+	border : 2px solid green;
+	width : 400px;
+	height : 400px;
+	background-size : cover;
+	background-position: center;
+	position: relative;
+	left : 50px;
+	margin : 5px;
+	background-image : url('file:///C:/Users/SIRIGIDI%20VASU/OneDrive/Pictures/Documents/Desktop/practice%20html/LBMGHTML%20NOTESV/Tumera.png');
+}
+.cardimgstyle
+{
+	background-color : blue;
+	font-size : 15x;
+	border-radius : 20px;
+	margin : 8px;
+	height : 130px;
+	text-align: center;
+	width: 400px;
+	padding : 5px;
+}
+
+.favcardstyle
+{
+	border : 2px solid red;
+	background-color: greenyellow;
+	margin: 3px;
+	width : 200px;
+	height : 100px;
+	font-family: Georgia;
+}

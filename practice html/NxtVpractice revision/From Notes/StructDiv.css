@@ -1,0 +1,51 @@
+.cls-style
+{
+	border: solid; 
+	border-color : blue;
+	margin : 5px;
+	margin-top : 25px; 
+	text-align : center;
+	background: yellow;
+	color : blue;
+
+
+}
+
+.div2-cardfontproperties
+{
+	margin : 20px;
+	text-align : center;
+	border-color : blue;
+	border-style : solid;
+	font-family: "arial";
+	font-size:20px;
+	font-style : italic ;
+	font-weight: bolder;
+	text-decoration: line-through;
+}
+
+.div3box
+{
+	border : 1px solid red;
+	margin : 25px;
+	border-width: 20px;
+	background-image : url('file:///C:/Users/SIRIGIDI%20VASU/OneDrive/Pictures/Documents/Desktop/practice%20html/Tumera.png');
+	background-size : cover;
+	height :90vh;
+	width : 80vw;
+
+}
+
+.div3inner
+{
+	border : 1px solid yellow;
+	margin-left : 20px;
+	border-width: 10px;
+	background-image : url('file:///C:/Users/SIRIGIDI%20VASU/OneDrive/Pictures/Documents/Desktop/practice%20html/Tumera.png');
+	background-size : 100% 100%;
+	height : 30vh;
+	width : 50vw;
+	margin-bottom : 35px;
+
+
+}

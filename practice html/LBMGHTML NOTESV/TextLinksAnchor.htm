@@ -1,0 +1,45 @@
+<!DOCTYPE HTML	>
+<html>
+<head>
+<title>Link in  HTML</title>
+</head>
+
+<body link = "black" alink = "purple" vlink="red">
+<h3><u>Links in Html :</u>  If you want to Navigate from one Location to another location | one page to another page by click on the text , we use Links it is also called as Hyper Links<br/>Hyper Links allows the visitor to navigate from one to another location / another webpage / another wesite .<br/>We can set the hyper linke by the Texts and images.<br/>To add Hyper Link / create the links in html using  : 'a'  tag <br/>
+Here a means anchor which is the tag for hyper links and it expects two attributes by default one is the href(hype reference) attribute : in which we define navigation of the destination location.<br/>Another is target attribute : it defines the place of the content execution menas : it allows a few target values : listed below<br/>
+Add underscore in before the every target value.<br/>
+1.target = "_blank"    : it opens the result after click the link in a new window. <br/>
+2.target = "_self "      :  it opens the result after click the link in a current window.<br/>
+3.target = "_parent" : it opens the result after click the link in a parent frame. <br/>
+4.target = "_top "     : it opens the result after click the link in the full body of the same  window/page.<br/>
+5.target name : opens the linked document in a named target name. <br/>
+To implement the 5th one using name attribute insteadn of href in anchor tag.<br/>
+If you wanto to navigate to the another text within the same document then we use name attribute with in the destination anchor tag. keep href in source anchor tag with value #value of the name attribute from the destination anchor tag.
+<br/>
+example : 
+
+here im go to the last line of the page using anchor.
+<a href="#vasu"> vasu </a><br/>file:///C:/Users/SIRIGIDI%20VASU/OneDrive/Pictures/Documents/Desktop/practice%20html/LBMGHTML%20NOTESV/TextLinksAnchor.htm#vasu
+
+
+syntax :   a    href = "name of the destination either path / file name"  target = "type of the execution"<br/>
+
+<a href = "Tumera.png" target = "_blank" >in a new window</a><br/>
+<a href = "Tumera.png" target = "_self">in the same window(same)</a><br/>
+<a href = "Tumera.png" target = "_top">same page from the top of the window(same)</a><br/>
+<a href = "Tumera.png" target = "_parent">in parent frame(same)</a><br/>
+<a href = "Tumera.png" >in target frame.(without target , same window by default)</a><br/>
+
+By default :  When you place the mouse(Hover) on the link it returns a hand symbol , and the link is in blue color and after at the time of clicking the link , it is in red color.<br>
+</h3>
+<h4>We can also change the color of the links in 3 states : before clicking , at the time of clicking and after clicking the colors will changed.<br/>means : 3 color will have  set by us.<br/>
+To set the colors by using 3 attribute about the links in the body tag.<br/>
+Body handles all the link provided in the web body.<br/>
+1. alink attribute : activated link : before clicking. pass the color / color code as a value to it.<br/>
+2. link attribute : Normal/Standard link : at the time of clicking. pass the color / color code as a value to it.<br/>
+3. vlink attribute : visited link : after clicking. pass the color / color code as a value to it.<br/></h4>
+<these attributes are only worked in body tag.<br/>
+
+<a name="vasu">hello in the last one</a>
+</body>
+</html>

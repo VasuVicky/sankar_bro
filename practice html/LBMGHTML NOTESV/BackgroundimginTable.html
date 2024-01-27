@@ -1,0 +1,81 @@
+<!DOCTYPE HTML	>
+<html>
+<head>
+<title>BackgroundImage in Table</title>
+<style>
+  table
+{
+border-collapse : collapse ;
+}
+.v
+{
+    background-image : url('Tumera.png');
+   background-size : cover;
+position : relative ; 
+width : 50%;
+height : 50%;
+
+
+
+}
+</style>
+</head>
+
+<body>
+<h2>To add background image to the table on web using in html using background attribute in table tag.</h2><br/>
+
+<h3>Let we take the existing table : </h3><br/>
+
+<h4>Creating a table with 4 cols : and 4 rows </h4><br/>
+
+<table border="3" bordercolor ="red" width="80%" align="center">
+
+<tr><th colspan="4">TABLE INFO</th></tr>
+<tr><th rowspan="5">DESCRIPTION</th></tr>
+<tr><th>NAME</th><th>INITIAL</th><th>DESIGNATION</th></tr>
+<tr><td>Vasu</td><td>Sirigidi</td><td>Software Developer</td></tr>
+<tr><td>Vicky</td><td>Sirigidi's</td><td>Software Engineer</td></tr>
+<tr><td>Bhaskar</td><td>Kapu's</td><td>Data Associate</td></tr>
+<tr><th colspan="4" >TABLE INFO</th></tr>
+
+</table>
+
+<br/><h2>Now i want to add an image to entire the table and for each row and each column or colors.</h2>
+<br/><h1>To add image to the table in 3 ways : <br/></h1>
+
+<br/><h3>
+1.Using background-image attribute with image path as value with single inverted comas (mandatory) in the table tag it applies the image to the entire table., and set the width and height for adjustments.<br/><br/>
+
+2.Using  inline styles : style attribute with property background-image with value as url(image path without using double quotes).<br/></br>
+
+3. Using Internal styles using style tag inside the head part with property background-image : url(); and to set the image compatable to the row or column using background-size property with value cover like background-size : cover ;<br/>
+
+4. we can also insert the image using img tag inside the td by adjusting width and height of the image..
+
+using background property in style attribute in 2 ways : background : color     or background : url(image).  every property and value in style attribute terminates with semicolon ;<br/>
+To move the image from left - right, top - bottom by using css property position with value relative and to adjust using left , right , top , bottom with no.of px values without position property l,r,top , btm are not worked.</h3>
+
+<h4>The properties of the css are same in all type of css like inline (embeded) , internal with in the style tag or in external css .<br/>The way of style organization is different but the properties and values are same . <br/>If you want to use the styles within the  tag then using : inline css (not better choice it decrease the code readability.)<br/>If you want to use the style in head part also using style tag by implementing selectors with property and value(which is the best way to divide the body called structure designing and styles).<br/>If you want to increase the code readability and performance to by separating the structure designing and style using External css(which is highly recomended).<br/></h4>
+
+<br/><h5>we cannot adjust the height and width of the image existed in entire row using background-image property , but we can able to do this using img tag with in a particular cell called : td / th.</h5>
+
+<br/><h2>Keep in mind , don't make any mistake , keep the properties and value with in the attribute and keep attributes with in the tag. otherwise it will display as a normal content on the page.</h2>
+
+
+<table border="3" bordercolor ="red" width="80%" align="center" style="background-image : url('Tumera.png') ; bakcground-size : cover ; position : relative ; right : 50px">
+
+<tr style="background : blue ; color : yellow; border-color : yellow ; "><th colspan="4"  >TABLE INFO</th></tr>
+<tr><th rowspan="5" bgcolor ="blue"><img  src = "Photo jpeg.jpeg" width="50%" height="1%"/></th></tr>
+<tr><th style = "background : orange">NAME</th><th style = "background : white">INITIAL</th><th style = "background : green">DESIGNATION</th></tr>
+
+<tr class="v"><td >Vasu</td><td>Sirigidi</td><td>Software Developer</td></tr>
+
+<tr class = "v"><td >Vicky</td><td>Sirigidi's</td><td>Software Engineer</td></tr>
+<tr class = "v"><td >Bhaskar</td><td>Kapu's</td><td>Data Associate</td></tr>
+<tr><th colspan="4" style="background : purple ; color : yellow ; " >Extra Row for applying color </th></tr>
+
+
+</table>
+
+</body>
+</html>
